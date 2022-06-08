@@ -1,0 +1,3 @@
+Map<Id, Account> accounts = new Map<Id, Account>([SELECT Id FROM Account]);
+List<Id> accountIds = new List<Id>(accounts.keyset());
+AccountProcessor.countContacts(accountIds);
